@@ -1,0 +1,14 @@
+# Archivos y carpetas comunes
+node_modules/
+.env
+*.log
+.DS_Store
+
+# Backend específico
+/backend/node_modules/
+/backend/.env
+
+# Build y dependencias locales
+/build/
+/dist/
+
