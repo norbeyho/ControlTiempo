@@ -1,6 +1,6 @@
 import express from "express";
-import { crearRegistro, obtenerRegistros } from "../controllers/registroController";
-import { protect } from "../middlewares/authMiddleware";
+import { crearRegistro, obtenerRegistros } from "../controllers/registroController.js";
+import { protect } from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
