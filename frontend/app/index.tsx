@@ -21,7 +21,7 @@ export default function LoginScreen() {
     try {
       setLoading(true);
 
-      const response = await axios.post("http://localhost:5000/api/auth/login", {
+      const response = await axios.post("http://192.68.80.14:5000/api/auth/login", {
         username,
         password,
       });
@@ -29,7 +29,7 @@ export default function LoginScreen() {
       if (response.data && response.data.token) {
         await AsyncStorage.setItem("user", JSON.stringify(response.data.user));
         await AsyncStorage.setItem("token", response.data.token);
-        router.replace("/home");
+        router.replace("/scanner");
       } else {
         Alert.alert("Error", "Respuesta inesperada del servidor");
       }

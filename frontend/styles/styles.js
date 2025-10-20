@@ -43,6 +43,33 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 16,
   },
+
+  containerScanner: { flex: 1, backgroundColor: "#000" },
+  camera: { flex: 1 },
+  center: { 
+    flex: 1, 
+    justifyContent: "center", 
+    alignItems: "center", 
+    backgroundColor: "#fff" 
+  },
+  overlayScanner: {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    backgroundColor: "rgba(255,255,255,0.9)",
+    padding: 20,
+    alignItems: "center",
+  },
+  textScanner: { fontSize: 16, marginBottom: 10, color: "#333" },
+  buttonScanner: {
+    backgroundColor: "#007AFF",
+    padding: 12,
+    borderRadius: 10,
+    marginTop: 10,
+    width: "80%",
+    alignItems: "center",
+  },
+  buttonTextScanner: { color: "#fff", fontSize: 16, fontWeight: "bold" },
 });
 
 export default styles;
