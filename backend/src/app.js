@@ -25,9 +25,4 @@ app.use("/api/auth", authRoutes);
 app.use("/api/buses", busRoutes);
 app.use("/api/registros", registroRoutes);
 
-app.get('/', (req, res) => {
-    res.send("Api funcionando")
-});
-
-
 export default app;
