@@ -29,7 +29,7 @@ export default function LoginScreen() {
       if (response.data && response.data.token) {
         await AsyncStorage.setItem("user", JSON.stringify(response.data.user));
         await AsyncStorage.setItem("token", response.data.token);
-        router.replace("/scanner");
+        router.replace("/home");
       } else {
         Alert.alert("Error", "Respuesta inesperada del servidor");
       }
